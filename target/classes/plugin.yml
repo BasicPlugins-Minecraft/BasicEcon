@@ -1,0 +1,41 @@
+name: BasicEcon
+version: 1.1
+main: me.mob.basicecon.basicecon.BasicEcon
+api-version: 1.16
+prefix: BasicEcon
+load: STARTUP
+depend: [Vault]
+author: Mobmaker
+description: Basic economy, just wallet and stuff.
+commands:
+  send:
+    description: Send money to another player.
+    aliases: [pay]
+    usage: /<command> [player] [amount] - not negative.
+
+  balance:
+    description: Check the balance of any player.
+    aliases: [bal, wallet]
+    usage: /<command> [player]
+
+  addcash:
+    description: Give money to a player. Admin management tool.
+    aliases: [givemoney, addmoney, addbal]
+    permission: basicecon.admin
+    usage: /<command> [player] [amount]
+
+  setcash:
+    description: Set a player's balance. Admin management tool.
+    aliases: [setmoney, setbal]
+    permission: basicecon.admin
+    usage: /<command> [player] [amount]
+
+  removecash:
+    description: Remove money from a player. Admin management tool.
+    aliases: [removemoney, delmoney, delcash, rembal]
+    permission: basicecon.admin
+    usage: /<command> [player] [amount]
+
+permissions:
+  basicecon.admin:
+    description: The role to use the admin commands.
