@@ -140,7 +140,7 @@ public class EconomyImplementer implements Economy {
         }
         UUID uuid = player.getUniqueId();
         double camt = plugin.playerBank.get(uuid);
-        return camt == amount;
+        return camt >= amount;
     }
 
     @Override
@@ -150,7 +150,7 @@ public class EconomyImplementer implements Economy {
         }
         UUID uuid = player.getUniqueId();
         double camt = plugin.playerBank.get(uuid);
-        return camt == amount;
+        return camt >= amount;
     }
 
     @Override
@@ -161,7 +161,7 @@ public class EconomyImplementer implements Economy {
         }
         UUID uuid = player.getUniqueId();
         double camt = plugin.playerBank.get(uuid);
-        return camt == amount;
+        return camt >= amount;
     }
 
     @Override
@@ -171,7 +171,7 @@ public class EconomyImplementer implements Economy {
         }
         UUID uuid = player.getUniqueId();
         double camt = plugin.playerBank.get(uuid);
-        return camt == amount;
+        return camt >= amount;
     }
 
     @Override
